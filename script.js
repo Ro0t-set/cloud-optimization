@@ -207,25 +207,27 @@ function clearErrors() {
 }
 
 /**
- * Submit form data
- * Replace this with your actual form submission logic (e.g., API call, email service)
+ * Submit form data to Web3Forms
  */
 async function submitForm(formData) {
-    return new Promise((resolve) => {
-        // Simulate API call
-        setTimeout(() => {
-            console.log('Form data:', Object.fromEntries(formData));
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        });
 
-            // Here you would typically send the data to your backend
-            // Example:
-            // fetch('/api/contact', {
-            //     method: 'POST',
-            //     body: formData
-            // })
+        const data = await response.json();
 
-            resolve();
-        }, 2000);
-    });
+        if (data.success) {
+            console.log('Form submitted successfully');
+            return data;
+        } else {
+            throw new Error(data.message || 'Form submission failed');
+        }
+    } catch (error) {
+        console.error('Submission error:', error);
+        throw error;
+    }
 }
 
 /**
