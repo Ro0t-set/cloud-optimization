@@ -213,6 +213,9 @@ async function submitForm(formData) {
     try {
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
             body: formData
         });
 
@@ -323,8 +326,10 @@ function initMobileMenu() {
             mobileMenuToggle.setAttribute('aria-expanded', 'false');
 
             const icon = mobileMenuToggle.querySelector('i');
-            icon.setAttribute('data-lucide', 'menu');
-            lucide.createIcons();
+            if (icon) {
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
         }
     });
 }
