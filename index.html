@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Ottimizzazione Costi Cloud | Tommaso Patriti</title>
+    <meta name="title" content="Ottimizzazione Costi Cloud | Riduci fino al 60% le Spese Azure e Kubernetes">
+    <meta name="description" content="Servizio specializzato nella riduzione dei costi cloud per startup e aziende. Ottimizzazione Azure, Kubernetes, AWS, DigitalOcean. Migrazione cloud economica e audit infrastruttura. Bologna, Italia.">
+    <meta name="keywords" content="ottimizzazione costi cloud, riduzione costi Azure, ottimizzazione Kubernetes, migrazione DigitalOcean, migrazione cloud economica, consulenza infrastruttura cloud, riduzione costi AWS, cloud cost optimization, kubernetes cost reduction, azure cost management, digitalocean migration, cloud migration service, consulente cloud freelance Bologna">
+    <meta name="author" content="Tommaso Patriti">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tommasopatriti.me/">
+    <meta property="og:title" content="Ottimizzazione Costi Cloud | Riduci fino al 60% le Spese Azure e Kubernetes">
+    <meta property="og:description" content="Servizio specializzato nella riduzione dei costi cloud per startup e aziende. Ottimizzazione Azure, Kubernetes, AWS.">
+    <meta property="og:image" content="https://tommasopatriti.me/og-image.jpg">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tommasopatriti.me/">
+    <meta property="twitter:title" content="Ottimizzazione Costi Cloud | Riduci fino al 60% le Spese Azure e Kubernetes">
+    <meta property="twitter:description" content="Servizio specializzato nella riduzione dei costi cloud per startup e aziende.">
+    <meta property="twitter:image" content="https://tommasopatriti.me/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tommasopatriti.me/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Tommaso Patriti - Ottimizzazione Costi Cloud",
+        "image": "https://tommasopatriti.me/logo.png",
+        "description": "Servizio specializzato nell'ottimizzazione dei costi cloud per startup e aziende. Riduzione costi Azure, Kubernetes, AWS e migrazione cloud economica.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bologna",
+            "addressCountry": "IT"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "44.4949",
+            "longitude": "11.3426"
+        },
+        "url": "https://tommasopatriti.me",
+        "priceRange": "€€",
+        "sameAs": [
+            "https://github.com/Ro0t-set",
+            "https://linkedin.com/in/tommaso-patriti"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Tommaso Patriti",
+            "jobTitle": "Sviluppatore Software Freelance",
+            "description": "Specialista in Cloud Computing, Microservizi e Sistemi Distribuiti"
+        },
+        "serviceType": [
+            "Ottimizzazione Costi Cloud",
+            "Consulenza Kubernetes",
+            "Migrazione Cloud",
+            "Audit Infrastruttura Cloud"
+        ],
+        "areaServed": {
+            "@type": "Country",
+            "name": "Italia"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo" aria-label="Tommaso Patriti - Cloud Cost Optimization">
+                    <i data-lucide="cloud" aria-hidden="true"></i>
+                    <span>Tommaso Patriti</span>
+                </a>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#problema" role="menuitem">Il Problema</a></li>
+                    <li role="none"><a href="#per-chi" role="menuitem">Per Chi</a></li>
+                    <li role="none"><a href="#come-lavoro" role="menuitem">Come Lavoro</a></li>
+                    <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
+                </ul>
+                <a href="#contatti" class="btn btn-primary">Contattami</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge">Consulenza Cloud Specializzata</span>
+                    <h1>Kubernetes per 200 Utenti? <span class="highlight">Probabilmente Non Ti Serve.</span></h1>
+                    <p class="hero-description">
+                        Semplifico infrastrutture cloud over-engineered. Meno complessità, meno costi, più tempo per il tuo business.
+                        Da cluster Kubernetes sovradimensionati a soluzioni semplici ed efficienti.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contatti" class="btn btn-primary btn-large">
+                            Prenota Call Gratuita (30 min)
+                            <i data-lucide="calendar"></i>
+                        </a>
+                        <a href="#come-lavoro" class="btn btn-secondary btn-large">
+                            Come Lavoro
+                            <i data-lucide="arrow-down"></i>
+                        </a>
+                    </div>
+                    <p class="hero-microcopy">Nessun impegno • Preventivo gratuito • Call in italiano</p>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i data-lucide="trending-down"></i>
+                            <span>Riduzione costi fino all'85%</span>
+                        </div>
+                        <div class="trust-item">
+                            <i data-lucide="clock"></i>
+                            <span>ROI in 2-3 mesi</span>
+                        </div>
+                        <div class="trust-item">
+                            <i data-lucide="zap"></i>
+                            <span>Manutenzione ridotta 80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="metric">
+                            <span class="metric-value">€1.700</span>
+                            <span class="metric-label">Risparmiati/mese</span>
+                        </div>
+                        <div class="metric-trend">
+                            <i data-lucide="trending-down"></i>
+                            <span>-85% costi totali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problema">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Il Problema</span>
+                <h2>Cluster Kubernetes per 500 Utenti?</h2>
+                <p class="section-description">
+                    Ho visto troppe startup bruciare €2.000/mese su cluster Kubernetes per gestire traffico che un singolo server da €50/mese gestirebbe perfettamente.
+                    <strong>È come usare una Ferrari per andare a comprare il pane.</strong>
+                </p>
+            </div>
+
+            <div class="stat-banner">
+                <div class="stat">
+                    <span class="stat-number">90%</span>
+                    <span class="stat-label">delle app non hanno bisogno di Kubernetes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">€2K → €300</span>
+                    <span class="stat-label">risparmio tipico al mese</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">20h → 2h</span>
+                    <span class="stat-label">riduzione tempo manutenzione</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section solution-section" id="soluzione">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">La Soluzione</span>
+                <h2>Semplifico e Riduco i Costi</h2>
+                <p class="section-description">
+                    Da Kubernetes a Docker Swarm per infrastrutture piccole/medie. Migrazione a provider più economici come <strong>DigitalOcean</strong>.
+                    Singolo nodo invece di cluster complessi. <strong>Stesso risultato, 1/10 della complessità, fino all'85% dei costi in meno.</strong>
+                </p>
+            </div>
+
+            <!-- Comparison Compatta -->
+            <div class="comparison-metrics">
+                <div class="metric-comparison">
+                    <div class="metric-before">
+                        <span class="metric-label">PRIMA</span>
+                        <span class="metric-value red">€2.000/mese</span>
+                    </div>
+                    <i data-lucide="arrow-right"></i>
+                    <div class="metric-after">
+                        <span class="metric-label">DOPO</span>
+                        <span class="metric-value green">€300/mese</span>
+                    </div>
+                </div>
+                <div class="metric-comparison">
+                    <div class="metric-before">
+                        <span class="metric-label">Setup</span>
+                        <span class="metric-value">3 giorni</span>
+                    </div>
+                    <i data-lucide="arrow-right"></i>
+                    <div class="metric-after">
+                        <span class="metric-label">Setup</span>
+                        <span class="metric-value green">3 ore</span>
+                    </div>
+                </div>
+                <div class="metric-comparison">
+                    <div class="metric-before">
+                        <span class="metric-label">Manutenzione</span>
+                        <span class="metric-value">20h/mese</span>
+                    </div>
+                    <i data-lucide="arrow-right"></i>
+                    <div class="metric-after">
+                        <span class="metric-label">Manutenzione</span>
+                        <span class="metric-value green">2h/mese</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process-section" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Come Funziona</span>
+                <h2>Processo in 3 Step</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Audit</h3>
+                        <p>Analisi dell'infrastruttura attuale per identificare sprechi e opportunità di risparmio.</p>
+                        <span class="step-duration">Durata: 5-7 giorni</span>
+                    </div>
+                </div>
+
+                <div class="process-step reverse">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Implementazione</h3>
+                        <p>Esecuzione delle ottimizzazioni con downtime minimo.</p>
+                        <span class="step-duration">Durata: 2-4 settimane</span>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Monitoraggio</h3>
+                        <p>Dashboard e alert per mantenere i costi sotto controllo.</p>
+                        <span class="step-duration">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- For Who Section -->
+    <section class="section for-who-section" id="per-chi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Target</span>
+                <h2>Per Chi è Questo Servizio?</h2>
+            </div>
+            <div class="for-who-grid">
+                <div class="for-who-card ideal">
+                    <div class="card-header">
+                        <i data-lucide="check-circle"></i>
+                        <h3>Sei la Persona Giusta Se...</h3>
+                    </div>
+                    <ul>
+                        <li><i data-lucide="check"></i> La tua startup ha meno di 10.000 utenti attivi</li>
+                        <li><i data-lucide="check"></i> Spendi più di €2.000/mese in cloud</li>
+                        <li><i data-lucide="check"></i> Il tuo team perde tempo a gestire l'infrastruttura</li>
+                        <li><i data-lucide="check"></i> Hai setup Kubernetes "perché tutti lo usano"</li>
+                        <li><i data-lucide="check"></i> Vuoi semplicità invece che complessità</li>
+                        <li><i data-lucide="check"></i> Cerchi un approccio pratico, non hype</li>
+                    </ul>
+                </div>
+                <div class="for-who-card not-ideal">
+                    <div class="card-header">
+                        <i data-lucide="x-circle"></i>
+                        <h3>Non Faccio al Caso Tuo Se...</h3>
+                    </div>
+                    <ul>
+                        <li><i data-lucide="x"></i> Hai milioni di utenti attivi</li>
+                        <li><i data-lucide="x"></i> Necessiti di scalabilità estrema</li>
+                        <li><i data-lucide="x"></i> Hai requisiti di compliance molto specifici</li>
+                        <li><i data-lucide="x"></i> La complessità è giustificata dal tuo caso d'uso</li>
+                        <li><i data-lucide="x"></i> Hai un team DevOps dedicato di 10+ persone</li>
+                        <li><i data-lucide="x"></i> Vuoi la soluzione più "cool" invece che quella che funziona</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How I Work Section -->
+    <section class="section how-i-work-section" id="come-lavoro">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Processo</span>
+                <h2>Processo Semplice e Trasparente</h2>
+                <p class="section-description">
+                    Ogni progetto è unico. Creo soluzioni su misura in base alle tue esigenze reali.
+                </p>
+            </div>
+
+            <div class="process-simple">
+                <div class="process-simple-step">
+                    <div class="step-number-large">1</div>
+                    <div class="step-content-large">
+                        <h3>Primo Contatto Gratuito</h3>
+                        <p>Call conoscitiva di 30 minuti senza impegno. Analizzo la tua situazione attuale e ascolto le tue necessità reali, non quello che "dovrebbe" essere.</p>
+                        <div class="step-features">
+                            <span><i data-lucide="video"></i> Call online (Google Meet/Zoom)</span>
+                            <span><i data-lucide="calendar"></i> Schedulazione flessibile</span>
+                            <span><i data-lucide="message-circle"></i> Q&A aperto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-simple-step">
+                    <div class="step-number-large">2</div>
+                    <div class="step-content-large">
+                        <h3>Preventivo Personalizzato Gratuito</h3>
+                        <p>Valuto dimensioni e complessità dell'infrastruttura. Ti fornisco una stima realistica dei costi, tempi e piano di intervento dettagliato. Zero costi nascosti.</p>
+                        <div class="step-features">
+                            <span><i data-lucide="file-text"></i> Documento dettagliato</span>
+                            <span><i data-lucide="clock"></i> Tempi realistici</span>
+                            <span><i data-lucide="dollar-sign"></i> Costi trasparenti</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-simple-step">
+                    <div class="step-number-large">3</div>
+                    <div class="step-content-large">
+                        <h3>Implementazione</h3>
+                        <p>Migrazione graduale e sicura con downtime minimo. Affiancamento completo, test approfonditi e validazione di ogni step. Il tuo team è sempre nel loop.</p>
+                        <div class="step-features">
+                            <span><i data-lucide="shield"></i> Downtime minimo</span>
+                            <span><i data-lucide="users"></i> Affiancamento completo</span>
+                            <span><i data-lucide="git-branch"></i> Rollback garantito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-info-card">
+                <div class="pricing-info-content">
+                    <h3><i data-lucide="help-circle"></i> Quanto Costa?</h3>
+                    <p><strong>Il costo dipende da:</strong></p>
+                    <ul class="pricing-factors">
+                        <li>Dimensioni dell'infrastruttura attuale</li>
+                        <li>Complessità della migrazione</li>
+                        <li>Numero di servizi da ottimizzare</li>
+                        <li>Downtime tollerabile</li>
+                    </ul>
+                    <div class="pricing-highlight">
+                        <i data-lucide="lightbulb"></i>
+                        <p><strong>Il primo contatto è sempre gratuito.</strong> Durante la call conoscitiva valuteremo insieme la tua situazione e riceverai un preventivo personalizzato dettagliato, senza alcun impegno.</p>
+                    </div>
+                    <div class="pricing-roi">
+                        <i data-lucide="trending-up"></i>
+                        <p>In media, i miei clienti recuperano l'investimento in <strong>2-3 mesi</strong> grazie al risparmio sui costi cloud.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="#contatti" class="btn btn-primary btn-large">
+                    <i data-lucide="calendar"></i>
+                    Prenota Call Gratuita
+                </a>
+                <a href="#contatti" class="btn btn-secondary btn-large">
+                    <i data-lucide="file-text"></i>
+                    Richiedi Preventivo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2>Domande Frequenti</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quanto tempo ci vuole per vedere i primi risultati?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Le prime ottimizzazioni "quick win" (come rightsizing e pulizia risorse inutilizzate) vengono implementate
+                                nei primi 7-10 giorni e i risparmi sono visibili già nella fattura del mese successivo.
+                                L'ottimizzazione completa richiede 30-60 giorni.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Ci sono rischi di downtime durante le ottimizzazioni?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Il downtime è ridotto al minimo. Utilizzo un approccio blue-green deployment e implemento le modifiche in modo incrementale,
+                                testando ogni cambiamento in ambienti non produttivi prima del rollout.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Lavori solo con Azure o anche con altri provider?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Mi specializzo principalmente in Azure, Kubernetes e <strong>DigitalOcean</strong>, ma ho esperienza anche con AWS, Google Cloud e soluzioni
+                                on-premise. <strong>Raccomando spesso DigitalOcean per startup e PMI</strong> grazie ai costi ridotti e all'ottima interfaccia utente,
+                                molto più semplice da gestire rispetto ai provider enterprise. Posso gestire migrazioni multi-cloud e strategie ibride per massimizzare il risparmio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quale risparmio realistico posso aspettarmi?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Il risparmio medio dei miei clienti è del 45%, con un range tra 30-60% a seconda dello stato iniziale
+                                dell'infrastruttura. Infrastrutture mai ottimizzate possono raggiungere risparmi superiori al 60%.
+                                Durante l'audit fornisco una stima precisa del risparmio potenziale.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Devo avere competenze tecniche specifiche?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                No, mi occupo io di tutti gli aspetti tecnici. Avrai bisogno solo di fornire accessi (read-only per l'audit,
+                                admin per l'implementazione) e un contatto tecnico per coordinamento e approvazioni. Tutto il processo è
+                                documentato e spiegato in modo chiaro.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Ma Docker Swarm è deprecato?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                No, è in modalità maintenance, ma è stabile e perfetto per infrastrutture piccole/medie.
+                                Per il 90% delle applicazioni è più che sufficiente e incredibilmente più semplice di Kubernetes.
+                                Docker lo supporta attivamente e funziona benissimo per traffico fino a decine di migliaia di utenti.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>E se poi cresco e mi servono più risorse?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Swarm scala benissimo fino a decine di nodi. Quando (e se) avrai davvero bisogno di Kubernetes,
+                                sarà facile migrare. Ma la maggior parte delle aziende non arriva mai a quel punto.
+                                È meglio partire semplice e scalare quando serve, piuttosto che sovra-ingegnerizzare dall'inizio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Perderò funzionalità importanti?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Tolgo solo ciò che non usi. Se una funzionalità è critica per il tuo business, la manteniamo.
+                                L'obiettivo è eliminare il superfluo, non danneggiare il servizio. Durante l'analisi iniziale
+                                mappiamo tutte le funzionalità realmente utilizzate e manteniamo solo quelle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quanto tempo richiede la migrazione?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Dipende dalla complessità, ma in media 2-4 settimane per una migrazione completa con downtime minimo.
+                                Progetti più semplici possono richiedere anche solo 1 settimana. Durante la call gratuita
+                                ti fornirò una stima precisa basata sulla tua infrastruttura.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Come viene calcolato il preventivo?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                In base a: numero di servizi, complessità infrastruttura attuale, volume di dati da migrare,
+                                e livello di affiancamento richiesto. Durante la call gratuita analizzo la tua situazione
+                                e ti darò una stima precisa e trasparente. Nessun costo nascosto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Posso iniziare solo con l'audit?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Assolutamente sì. Il pacchetto Audit è perfetto se vuoi prima capire il potenziale di risparmio e avere
+                                un piano dettagliato, per poi decidere se procedere con l'implementazione (anche con il tuo team interno).
+                                Se poi decidi di procedere con me, il costo dell'audit viene scalato dal pacchetto completo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Lavori on-site o da remoto?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Principalmente lavoro da remoto, il che mi permette di essere più efficiente e conveniente.
+                                Per clienti enterprise posso prevedere alcune sessioni on-site (Bologna e dintorni, o trasferte
+                                programmate per progetti più grandi).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contatti">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-label">Contatti</span>
+                    <h2>Iniziamo a Risparmiare</h2>
+                    <p class="lead">
+                        Compila il form per ricevere un'analisi preliminare gratuita della tua infrastruttura.
+                        Ti risponderò entro 24 ore lavorative.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:tommasopatriti@gmail.com">tommasopatriti@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Località</h4>
+                                <p>Bologna, Italia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Ro0t-set" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/tommaso-patriti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://tommasopatriti.me" target="_blank" rel="noopener noreferrer" aria-label="Personal Website">
+                            <i data-lucide="globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                aria-required="true"
+                                placeholder="Mario Rossi"
+                            >
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Aziendale *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                aria-required="true"
+                                placeholder="mario.rossi@azienda.it"
+                            >
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Azienda</label>
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                placeholder="Nome Azienda"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefono</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+39 123 456 7890"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cloudProvider">Provider Cloud Principale *</label>
+                            <select id="cloudProvider" name="cloudProvider" required aria-required="true">
+                                <option value="">Seleziona...</option>
+                                <option value="azure">Microsoft Azure</option>
+                                <option value="aws">Amazon AWS</option>
+                                <option value="gcp">Google Cloud Platform</option>
+                                <option value="digitalocean">DigitalOcean</option>
+                                <option value="multi">Multi-cloud</option>
+                                <option value="other">Altro</option>
+                            </select>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="monthlySpend">Spesa Mensile Stimata *</label>
+                            <select id="monthlySpend" name="monthlySpend" required aria-required="true">
+                                <option value="">Seleziona...</option>
+                                <option value="0-5k">€0 - €5.000</option>
+                                <option value="5k-15k">€5.000 - €15.000</option>
+                                <option value="15k-30k">€15.000 - €30.000</option>
+                                <option value="30k-50k">€30.000 - €50.000</option>
+                                <option value="50k+">€50.000+</option>
+                            </select>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Descrivimi la tua situazione *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                aria-required="true"
+                                placeholder="Es: Abbiamo un cluster Kubernetes su Azure che costa €40K/mese e vorremmo ottimizzare i costi mantenendo le performance..."
+                            ></textarea>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
+                                <span>Accetto l'<a href="privacy-policy.html" target="_blank">informativa sulla privacy</a> *</span>
+                            </label>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <span class="btn-text">Richiedi Analisi Gratuita</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i data-lucide="loader" class="spinning"></i>
+                                Invio in corso...
+                            </span>
+                        </button>
+
+                        <p class="form-note">* Campi obbligatori. Ti risponderò entro 24 ore lavorative.</p>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <h3>Messaggio Inviato!</h3>
+                        <p>Grazie per avermi contattato. Riceverai una risposta entro 24 ore lavorative con un'analisi preliminare.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <i data-lucide="cloud"></i>
+                            <span>Tommaso Patriti</span>
+                        </div>
+                        <p>Sviluppatore Software Freelance specializzato in ottimizzazione costi cloud, Kubernetes e sistemi distribuiti.</p>
+                        <div class="footer-social">
+                            <a href="https://github.com/Ro0t-set" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/tommaso-patriti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://tommasopatriti.me" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                                <i data-lucide="globe"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Servizi</h4>
+                            <ul>
+                                <li><a href="#soluzione">Ottimizzazione Costi Cloud</a></li>
+                                <li><a href="#soluzione">Kubernetes Optimization</a></li>
+                                <li><a href="#soluzione">Migrazione Cloud</a></li>
+                                <li><a href="#soluzione">Audit Infrastruttura</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Risorse</h4>
+                            <ul>
+                                <li><a href="#processo">Come Funziona</a></li>
+                                <li><a href="#risultati">Case Study</a></li>
+                                <li><a href="#prezzi">Prezzi</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contatti</h4>
+                            <ul>
+                                <li><a href="mailto:tommasopatriti@gmail.com">tommasopatriti@gmail.com</a></li>
+                                <li>Bologna, Italia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Tommaso Patriti. P.IVA: 04291431205. Tutti i diritti riservati.</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="cookie-policy.html">Cookie Policy</a>
+                        <a href="termini-servizio.html">Termini di Servizio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Torna su">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
