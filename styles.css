@@ -398,53 +398,31 @@ button {
 }
 
 .kiss-badge {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    padding: var(--spacing-3xl);
-    border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-2xl);
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
     text-align: center;
-    min-width: 320px;
-    position: relative;
-    overflow: hidden;
-}
-
-.kiss-badge::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.8; }
+    min-width: 240px;
+    border: 2px solid var(--color-gray-200);
 }
 
 .kiss-acronym {
-    font-size: var(--font-size-6xl);
+    font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-extrabold);
-    color: var(--color-white);
+    color: var(--color-primary);
     line-height: 1;
     letter-spacing: 0.1em;
     font-family: var(--font-family-mono);
-    text-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    position: relative;
-    z-index: 1;
 }
 
 .kiss-text {
     display: block;
-    font-size: var(--font-size-lg);
-    color: rgba(255, 255, 255, 0.95);
-    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-top: var(--spacing-sm);
     font-weight: var(--font-weight-medium);
-    letter-spacing: 0.05em;
-    position: relative;
-    z-index: 1;
+    letter-spacing: 0.03em;
 }
 
 /* ============================================
