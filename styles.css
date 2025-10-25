@@ -172,10 +172,14 @@ button {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    width: 100%;
 }
 
 .section {
     padding: var(--spacing-4xl) 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -1918,12 +1922,18 @@ button {
     }
 
     .kiss-badge {
-        min-width: 200px;
+        min-width: auto;
+        max-width: 85vw;
         padding: var(--spacing-lg);
     }
 
     .kiss-acronym {
         font-size: var(--font-size-3xl);
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .contact-content {
@@ -1940,8 +1950,16 @@ button {
         --container-padding: var(--spacing-md);
     }
 
+    * {
+        max-width: 100%;
+    }
+
     body {
         font-size: var(--font-size-sm);
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
     }
 
     .hero h1 {
@@ -1951,10 +1969,12 @@ button {
     .btn-large {
         padding: var(--spacing-md) var(--spacing-lg);
         font-size: var(--font-size-sm);
+        white-space: normal;
     }
 
     .kiss-badge {
-        min-width: 180px;
+        min-width: auto;
+        max-width: 90vw;
         padding: var(--spacing-md);
     }
 
