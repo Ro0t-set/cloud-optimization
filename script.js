@@ -309,14 +309,16 @@ function initMobileMenu() {
 
         // Toggle icon between menu and X
         const icon = mobileMenuToggle.querySelector('i');
-        if (navLinks.classList.contains('active')) {
-            icon.setAttribute('data-lucide', 'x');
-        } else {
-            icon.setAttribute('data-lucide', 'menu');
-        }
+        if (icon) {
+            if (navLinks.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
 
-        // Reinitialize icons
-        lucide.createIcons();
+            // Reinitialize icons
+            lucide.createIcons();
+        }
     });
 
     // Close menu when clicking outside
