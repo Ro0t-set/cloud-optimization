@@ -397,6 +397,21 @@ button {
     justify-content: center;
 }
 
+.kiss-badge-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform var(--transition-base);
+}
+
+.kiss-badge-link:hover {
+    transform: translateY(-4px);
+}
+
+.kiss-badge-link:hover .kiss-badge {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-xl);
+}
+
 .kiss-badge {
     background: var(--color-white);
     padding: var(--spacing-xl);
@@ -405,6 +420,26 @@ button {
     text-align: center;
     min-width: 240px;
     border: 2px solid var(--color-gray-200);
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.kiss-quote-icon {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-300);
+    line-height: 1;
+    font-family: var(--font-family-base);
+    position: absolute;
+    top: var(--spacing-sm);
+    left: var(--spacing-md);
+}
+
+.kiss-quote-close {
+    top: auto;
+    bottom: var(--spacing-sm);
+    left: auto;
+    right: var(--spacing-md);
 }
 
 .kiss-acronym {
@@ -413,7 +448,8 @@ button {
     color: var(--color-primary);
     line-height: 1;
     letter-spacing: 0.1em;
-    font-family: var(--font-family-mono);
+    font-family: var(--font-family-base);
+    margin-top: var(--spacing-md);
 }
 
 .kiss-text {
@@ -421,8 +457,10 @@ button {
     font-size: var(--font-size-sm);
     color: var(--color-gray-600);
     margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     font-weight: var(--font-weight-medium);
     letter-spacing: 0.03em;
+    font-family: var(--font-family-base);
 }
 
 /* ============================================
