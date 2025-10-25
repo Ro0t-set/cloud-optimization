@@ -1915,10 +1915,7 @@ button {
     }
 
     .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 48px;
-        height: 48px;
+        display: none !important;
     }
 
     .kiss-badge {
@@ -1988,18 +1985,6 @@ button {
 
     .kiss-quote-icon {
         font-size: var(--font-size-3xl);
-    }
-
-    .back-to-top {
-        bottom: 16px;
-        right: 16px;
-        width: 44px;
-        height: 44px;
-    }
-
-    .back-to-top i {
-        width: 20px;
-        height: 20px;
     }
 
     .stat-number {
