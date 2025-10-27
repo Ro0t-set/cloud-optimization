@@ -223,6 +223,14 @@ async function submitForm(formData) {
 
         if (data.success) {
             console.log('Form submitted successfully');
+
+            // Trigger Google Ads conversion tracking
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17681747905'
+                });
+            }
+
             return data;
         } else {
             throw new Error(data.message || 'Form submission failed');
