@@ -227,7 +227,7 @@ async function submitForm(formData) {
             // Trigger Google Ads conversion tracking
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'conversion', {
-                    'send_to': 'AW-17681747905'
+                    'send_to': 'AW-17681747905/conversion_event_request_quote'
                 });
             }
 
